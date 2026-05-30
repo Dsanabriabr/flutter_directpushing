@@ -22,18 +22,24 @@ class LinkButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final shadowColor = Colors.black.withOpacity(0.7);
+    final shadowColor = Colors.black.withValues(
+      alpha: 0.7,
+      red: 0,
+      green: 0,
+      blue: 0,
+    );
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Stack(
+        clipBehavior: Clip.none,
         children: [
           // Fake shadow (offset)
           Positioned(
-            top: 6,
-            left: 6,
-            right: 0,
-            bottom: 0,
+            top: 4,
+            left: 4,
+            right: -4,
+            bottom: -4,
             child: Container(
               decoration: BoxDecoration(
                 color: shadowColor,
@@ -76,6 +82,9 @@ class LinkButton extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const SizedBox(width: 16),
+                  NotificationBadge(count: notificationCount),
+                  const SizedBox(width: 16),
                 ],
               ),
             ),
