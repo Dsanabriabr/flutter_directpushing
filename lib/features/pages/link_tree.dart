@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../models/link_item.dart';
-import '../../widgets/link_button.dart';
+import '../../core/models/link_item.dart';
+import '../../design_system/link_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:custom_rich_text/custom_rich_text.dart';
 import 'package:custom_rich_text/models/read_more_less_model.dart';

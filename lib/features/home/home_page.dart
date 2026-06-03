@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mvp_politician_app/presentation/pages/home/home_appbar.dart';
-import 'package:mvp_politician_app/presentation/pages/home/home_floating_button.dart';
-import 'package:mvp_politician_app/presentation/pages/link_tree.dart';
+import 'package:mvp_politician_app/features/home/home_appbar.dart';
+import 'package:mvp_politician_app/features/home/home_floating_button.dart';
+import 'package:mvp_politician_app/features/pages/link_tree.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class HomePage extends StatefulWidget {
@@ -62,19 +62,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       floatingActionButton: HomeFloatingButton(onTap: toggleMenu),
-      floatingActionButtonLocation: CustomFabLocation(),
+      floatingActionButtonLocation: HomeFloatingButtonLocation(),
     );
-  }
-}
-
-class CustomFabLocation extends FloatingActionButtonLocation {
-  @override
-  Offset getOffset(ScaffoldPrelayoutGeometry scaffoldGeometry) {
-    // Determine the X and Y coordinates
-    // scaffoldGeometry.scaffoldSize provides the full screen dimensions
-    double x = scaffoldGeometry.scaffoldSize.width - 80; // Custom X
-    double y = scaffoldGeometry.scaffoldSize.height - 150; // Custom Y
-    
-    return Offset(x, y);
   }
 }

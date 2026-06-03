@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mvp_politician_app/presentation/pages/home/home_page.dart';
+import 'package:mvp_politician_app/features/home/home_page.dart';
 
 void main() {
   runApp(const MyApp());

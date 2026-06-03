@@ -29,3 +29,15 @@ class HomeFloatingButton extends StatelessWidget {
     );
   }
 }
+
+class HomeFloatingButtonLocation extends FloatingActionButtonLocation {
+  @override
+  Offset getOffset(ScaffoldPrelayoutGeometry scaffoldGeometry) {
+    // Determine the X and Y coordinates
+    // scaffoldGeometry.scaffoldSize provides the full screen dimensions
+    double x = scaffoldGeometry.scaffoldSize.width - 80; // Custom X
+    double y = scaffoldGeometry.scaffoldSize.height - 150; // Custom Y
+    
+    return Offset(x, y);
+  }
+}
