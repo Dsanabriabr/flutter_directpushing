@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     controller2 = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
-      ..loadRequest(Uri.parse('https://queroapoiar.com.br/thiago-dos-reis'));
+      ..loadRequest(Uri.parse('https://queroapoiar.com.br/lucasmortimer'));
     controller1 = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..loadRequest(Uri.parse('https://www.instagram.com/lucasmortimer/reels/'));
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
       body: IndexedStack(
         index: currentIndex,
         children: [
-          WebViewWidget(controller: controller1),
+          WebViewWidget(controller: controller2),
           linkTreeController,
         ],
       ),
