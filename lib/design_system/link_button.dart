@@ -66,7 +66,11 @@ class LinkButton extends StatelessWidget {
                     clipBehavior: Clip.none,
                     children: [
                       FaIcon(icon, size: 26),
-                      NotificationBadge(count: notificationCount),
+                      Positioned(
+                        right: -6,
+                        top: -6,
+                        child: NotificationBadge(count: notificationCount),
+                      ),
                     ],
                   ),
 
