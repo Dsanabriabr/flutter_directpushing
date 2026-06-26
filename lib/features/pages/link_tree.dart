@@ -62,7 +62,7 @@ class LinkTreePage extends StatelessWidget {
                 CircleAvatar(
                   radius: 50,
                   backgroundColor: Colors.yellow,
-                  backgroundImage: NetworkImage("https://instagram.fbhz1-2.fna.fbcdn.net/v/t51.82787-19/702544723_18590467711054132_7348923210716710638_n.jpg?stp=dst-jpg_s320x320_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fbhz1-2.fna.fbcdn.net&_nc_cat=104&_nc_oc=Q6cZ2gFBpExhKGRWR497-xfye572HJe1vIA1BJgrI9SaqEYSalt_9EHkmrdh_Jrgh-8z30d4dht4P7HZjqm9pc3jiEmX&_nc_ohc=85pYtTUnabcQ7kNvwEG1B3R&_nc_gid=D7gKzTv00sg8fs2TwqtjwQ&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Af4tUXMY25MxTQmBX3_tCG6toPEF16xVPK9GyjFZvUcwuQ&oe=6A187A77&_nc_sid=8b3546"),
+                  backgroundImage: NetworkImage("https://scontent.fbhz1-1.fna.fbcdn.net/v/t39.30808-1/702695592_28015886788013233_9182764264861766887_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s480x480&_nc_cat=103&ccb=1-7&_nc_sid=1d2534&_nc_ohc=55i1xRzxEWgQ7kNvwGFCbHU&_nc_oc=Adq3fjshVawzmbD11Z759RuWf-Ce8IEDfGoX6clIWdGk7XMZgF1tMP2ftLMj3bVTnY6Xu8tzyx22x211nIDs1SlH&_nc_zt=24&_nc_ht=scontent.fbhz1-1.fna&_nc_gid=87vuLjTsnhaYmuqcLwwsbg&_nc_ss=7b289&oh=00_Af99ZIt67ELNr-KZFmVtJ2kZpTy0Cq4vxpBUC890lfCakA&oe=6A4475DE"),
                 ),
                 SizedBox(height: 10),
                 Text(
